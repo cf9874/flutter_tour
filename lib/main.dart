@@ -16,6 +16,7 @@ void main() {
   String? greet = 'hello';
 
   greet = null;
-
   // attach '?' after Type def
+  greet?.isNotEmpty;
+  // usage
 }
