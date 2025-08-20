@@ -3,20 +3,21 @@
 import 'dart:developer';
 
 void main() {
-  // late is a modifier(수식어)
-  // And it should be placed before type like fianl, var, String...
-  // usage
-  // late는 초기 데이터 없이 변수를 선언할 수 있게 해준다.
-  // like let in JS
-  late final String name;
-  // do something, go to api
-  var resultByApi = '1234'; // result by api
-  print(name);
-  //The late local variable 'name' is definitely unassigned at this point.
-  // 아직 name에 값이 없기 떄문에 name에 접근 불가
-  name = resultByApi;
-  print(name)
-  //final 변수를 사용하고 싶은데 그 값을 서버에서 받아야 한다면 late 사용
-  // if you want to use final variables with result that it could be got from server,
-  // you can use late
+  // const in Dart is defferent in JS or TS
+  // const in JS or TS is simillar with fianl in Dart
+
+  // dart에서 const는 compile-time constat를 만들어준다
+
+  // compile-time constat
+  const name = 'gang';
+  // final처럼 이후 수정불가
+  // const는 compile-time에 알고 있는 값이어야한다는 것
+  // const는 컴파일 할 떄 알고 있는 값에 사용한다라 ..
+  // 앱스토어에 앱을 올리기전에 알고 있는 값..
+  // 어떤 값인지 모르고, 그 값이 API로 부터 온다거나,
+  // 사용자가 입력해야 하는 값이라면 const를 사용하지 않음 (그런건 var or final)
+  const max_allowed_price = 1200000;
+  // API_KEY 같은 값 사용하는거네
+  // 이런 값은 컴파일 할 떄에 평가된다.
+  // => 앱에 담긴 코드를 앱스토어에 보내기 전에!
 }
