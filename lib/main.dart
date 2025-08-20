@@ -3,20 +3,15 @@
 import 'dart:developer';
 
 void main() {
-  log("asdasd");
-  var name = 'fe';
-  print(name);
-  String nick = 'iron';
-  print(nick);
-  int test = 1;
+  // Final Variables
+  //  한번 정의된 변수를 수정할 수 없게 만드는 방법
 
-  // String greet = 'hello';
-  // greet = null;
+  String nick = 'fe';
+  nick = 'iron';
 
-  String? greet = 'hello';
-
-  greet = null;
-  // attach '?' after Type def
-  greet?.isNotEmpty;
-  // usage
+  final name = 'gang';
+  name = '11'; // wrong usage
+  // The final variable 'name' can only be set once.
+  // as const in JS
+  final bool gender = true;
 }
