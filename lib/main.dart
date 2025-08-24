@@ -3,15 +3,11 @@
 import 'dart:developer';
 
 void main() {
-  // All data types in dart is Object. even func is also object.
-  String name = "name";
-  bool alive = true;
-  int age = 31;
-  double money = 69.99;
-  // these type are class.(object)
-
-  // but
-  num x = 12;
-  x = 1.1;
-  // so these data type have a lot of methods!
+  var giveMeFive = true;
+  var numbers = [1, 2, 3, 4];
+  if (giveMeFive) {
+    numbers.add(5);
+  }
+  List<int> test = [5, 6, 7, 8, if (giveMeFive) 5];
+  log('asad');
 }
