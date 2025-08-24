@@ -2,18 +2,15 @@
 
 import 'dart:developer';
 
-void sayHello(String name) {
-  print("Hello, $name ! hihihi");
+String sayHello({
+  required String name,
+  required int age,
+  required String nation,
+}) {
+  return 'I am $name , $age years old, and come from $nation';
 }
 
-int resultAge(int age) {
-  return age;
-}
-
-String arrowFnc(String par) => par;
 void main() {
-  sayHello("bdhs");
-  late final age = resultAge(11);
-  print(age);
-  print(arrowFnc("zz hm"));
+  String result = sayHello(name: "cf", age: 31, nation: 'KOR');
+  print(result);
 }
