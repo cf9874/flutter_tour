@@ -3,30 +3,16 @@
 import 'dart:developer';
 
 void main() {
+var numbers1={1,2,3,4};
+print(numbers1);
 
-
-  var charactor = {
-    "id":"cf9874",
-    "age":31,
-  };
-  // Map<String, Object> charactor
-
-  print(charactor);
-  
-  Map<int,bool> example ={
-    1:false,
-    2:true,
-    3:true,
-    4:false,
-    // 'st':"Asd",
-    // The element type 'String' can't be assigned to the map value type 'bool
-  };
-  print(example);
-
-  Map<List<int>,bool> variation = {
-    [1,2,3]:false,
-    [2,3,5]:true,
-  };
-
-  print(variation);
+Set<int> numbers2= {
+  1, 2, 3, 5
+};
+print(numbers2);
+numbers2.add((2));
+numbers2.add((2));
+numbers2.add((2));
+print(numbers2);
+// set은 고유한 원소를 가짐
 }
