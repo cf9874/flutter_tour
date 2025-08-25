@@ -2,15 +2,18 @@
 
 import 'dart:developer';
 
-String sayHello({
-  required String name,
-  required int age,
-  required String nation,
-}) {
-  return 'I am $name , $age years old, and come from $nation';
+class Player {
+  final String name = 'cf';
+  int xp = 1500;
+
+  void sayHello() {
+    print('hi my name is $name');
+  }
 }
 
 void main() {
-  String result = sayHello(name: "cf", age: 31, nation: 'KOR');
-  print(result);
+  var player = Player();
+  print(player.name);
+
+  player.sayHello();
 }
